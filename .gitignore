@@ -1,0 +1,6 @@
+# Text Editors
+
+.idea
+.vscode
+*.bak
+*.tmp
