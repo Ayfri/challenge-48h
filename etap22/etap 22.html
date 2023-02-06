@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html i lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<div class="content-container">
+				<form action="/login" method="post">
+					<button class="back">
+						<span class="arrow-back">
+							<svg aria-hidden="true" class="caret-32tYrE" height="16" role="img" viewBox="0 0 24 24" width="16">
+								<g fill="none" fill-rule="evenodd">
+									<polygon
+											fill="currentColor"
+											fill-rule="nonzero"
+											points="18.35 4.35 16 2 6 12 16 22 18.35 19.65 10.717 12"
+									></polygon>
+									<polygon points="0 0 24 0 24 24 0 24"></polygon>
+								</g>
+							</svg>
+						</span>
+						<span>
+							Retour
+						</span>
+					</button>
+
+					<div class="presentation">
+						<h1 class="title">
+							Ha, te revoilà !
+						</h1>
+						<p class="subtitle">
+							Nous sommes si heureux de te revoir !
+						</p>
+					</div>
+
+					<label class="input-label" for="username">
+						E-Mail ou numéro de téléphone
+						<span class="required">*</span>
+					</label>
+					<input autocomplete="off" id="username" maxlength="40" minlength="3" name="username" required type="text">
+
+					<label class="input-label" for="password">
+						Mot de passe
+						<span class="required">*</span>
+					</label>
+					<input autocomplete="off" id="password" maxlength="64" minlength="3" name="password" required type="password">
+					<a href="#" class="forgot-password">
+						Tu as oublié ton mot de passe ?
+					</a>
+
+					<button id="submit" type="submit">Connexion</button>
+					<p class="subtitle needing-account">
+						Besoin d'un compte ? <a href="#">S'inscrire</a>
+					</p>
+				</form>
+				<div class="qr-container">
+					<img alt="QR Code" id="qr-code-img" src="qrcode.png">
+
+					<h2 class="qr-title">
+						Se connecter avec un code QR
+					</h2>
+
+					<p class="subtitle qr-subtitle">
+						Scanne-le avec l'<strong>application mobile Discord</strong> pour te connecter instantanément.
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
