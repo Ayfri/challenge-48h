@@ -1,0 +1,18 @@
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .square {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    transition: all 0.5s ease;
+  }
+  
+  .square:hover {
+    transform: rotate(90deg);
+  }
+  
