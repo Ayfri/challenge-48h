@@ -1,0 +1,29 @@
+body {
+	overflow: hidden;
+}
+
+button {
+	animation: rotate-fast .01s infinite linear;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 10rem;
+	user-select: none;
+}
+
+@keyframes rotate-fast {
+	0% {
+		rotate: 0deg;
+		translate: 80vw -10vh;
+	}
+
+	50% {
+		rotate: 360deg;
+		translate: -50vw 95vh;
+	}
+
+	100% {
+		rotate: -360deg;
+		translate: -10vw 20vh;
+	}
+}
