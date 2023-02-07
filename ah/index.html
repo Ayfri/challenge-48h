@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
     <button class="clic">Cliquer ici et attein les 500 clic pour avoir la lettre</button>
-    <button id="letterButton" class="bouton">voici la lettre</button>
+    <button id="letterButton" class="bouton">Voici la lettre</button>
 
 <script>
     document.getElementById("letterButton").addEventListener("click", function(){
-        alert("La lettre est");
+        alert("La lettre est R");
     });
         const button = document.querySelector('button');
 
@@ -22,7 +21,7 @@ let clickCount = 0;
 button.addEventListener('click', event => {
   clickCount += 1;
   if (clickCount === 486) {
-    button.innerHTML = 'je crois quune erreur cest produite veuiller reisseiller';
+    button.innerHTML = "Une erreur s'est produite veuillez réessayer";
   } else {
     button.innerHTML = `Nombre de clics : ${clickCount}`;
   }
