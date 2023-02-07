@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>You won</title>
+
+		<style>
+			body {
+				overflow: hidden;
+			}
+
+			* {
+				font-family: 'Comic Sans MS', cursive, sans-serif;
+			}
+
+			h1 {
+				animation: winText 1.5s 1s linear reverse infinite;
+				color: #ff0000;
+				font-size: 50px;
+				text-align: center;
+			}
+
+			@keyframes winText {
+				0% {
+					transform: rotate(0deg) scale(1);
+				}
+
+				25% {
+					transform: rotate(360deg) scale(1.5);
+				}
+
+				50% {
+					transform: rotate(360deg) scale(2);
+				}
+
+				75% {
+					transform: rotate(0deg) scale(1.5);
+				}
+
+				100% {
+					transform: rotate(0deg) scale(1);
+				}
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 45%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			You woooooooon !!!!!!!
+		</h1>
+
+		<img src="https://tenor.com/view/pig-feeling-like-a-winner-wiggle-dance-dancing-gif-16204998.gif">
+	</body>
+</html>
