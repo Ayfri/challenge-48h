@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<button class="clic">Cliquer ici et attein les 500 clic pour avoir la lettre</button>
+		<button class="bouton" id="letterButton">Voici la lettre</button>
+
+		<script>
+			document.getElementById("letterButton").addEventListener("click", function () {
+				alert("La lettre est R");
+			});
+			const button = document.querySelector('button');
+
+			let clickCount = 0;
+
+			button.addEventListener('click', event => {
+				clickCount += 1;
+				if (clickCount === 486) {
+					button.innerHTML = "Une erreur s'est produite veuillez réessayer";
+				} else {
+					button.innerHTML = `Nombre de clics : ${clickCount}`;
+				}
+			});
+
+		</script>
+	</body>
+</html>

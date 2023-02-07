@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Jeu de devinette</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="fond">
+
+			<div class="devine">
+				<h1>Devine le nombre !</h1>
+				<p>Je pense à un nombre entre 1 et 50.</p>
+				<p>Entre un nombre : </p>
+				<input id="guessInput" type="number">
+				<button class="a" onclick="checkGuess()">Vérifier</button>
+				<p id="result"></p>
+        <p class="hidden">H</p>
+				<script>
+					function checkGuess() {
+						const targetNumber = Math.floor(Math.random() *50) + 1;
+						const guess = document.getElementById("guessInput").value;
+						if (guess == targetNumber) {
+							document.getElementById("result").innerHTML = "Félicitations ! Tu as trouvé le bon nombre tiens ça t'aidera :";
+                            document.querySelector('.hidden').classList.remove('hidden');
+						} else if (guess < targetNumber) {
+							document.getElementById("result").innerHTML = "C'est plus grand.";
+						} else {
+							document.getElementById("result").innerHTML = "C'est plus petit.";
+						}
+					}
+				</script>
+			</div>
+		</div>
+	</body>
+</html>
