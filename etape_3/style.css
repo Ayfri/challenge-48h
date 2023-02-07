@@ -26,3 +26,12 @@ button {
   margin-top: 20px;
   font-size: 18px;
 }
+
+.hint {
+	opacity: 0;
+	transition: 300s;
+}
+
+.hint:hover {
+	opacity: 1;
+}

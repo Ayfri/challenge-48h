@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Find the key</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="container">
-      <h1>Find the key</h1>
-      <form id="form">
-        <label for="publicKey">Enter key:</label><br>
-        <textarea id="publicKey" name="publicKey"></textarea><br><br>
-        <button type="submit">Déchiffrer</button>
-      </form> 
-      <div id="result"></div>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum commodo justo, in pellentesque justo gravida eu. Sed ornare, erat non aliquam commodo, leo enim aliquam nulla, at malesuada metus risus in orci. Sed malesuada quam id lectus tempor, vel volutpat ante dictum. Praesent euismod erat velit, vel sollicitudin mi congue vitae. Ut malesuada, dolor non pharetra congue, dui dui sollicitudin nunc, quis facilisis quam odio ac justo. Nunc id risus efficitur, laoreet risus in, porttitor nunc.</p>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Find the key</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="container">
+			<h1>Find the key</h1>
+			<form id="form">
+				<label for="publicKey">Enter key:</label><br>
+				<textarea id="publicKey" name="publicKey"></textarea><br><br>
+				<button type="submit">Déchiffrer</button>
+			</form>
+			<div id="result"></div>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum commodo justo, in pellentesque justo gravida eu. Sed
+			ornare, erat non aliquam commodo, leo enim aliquam nulla, at malesuada metus risus in orci. Sed malesuada quam id lectus tempor,
+			vel volutpat ante dictum. Praesent euismod erat velit, vel sollicitudin mi congue vitae. Ut malesuada, dolor non pharetra
+			congue, dui dui sollicitudin nunc, quis facilisis quam odio ac justo. Nunc id risus efficitur, laoreet risus in, porttitor
+			nunc.</p>
 
-    <p>Vivamus sollicitudin, sapien in rutrum placerat, velit libero congue libero, at blandit libero sem eget eros. Sed laoreet massa sit amet pellentesque fringilla. Sed eget gravida quam, non faucibus lectus. Aliquam erat volutpat. Sed vestibulum justo eu risus convallis hendrerit. Aliquam sed malesuada elit. Donec ac turpis orci. Fusce sed libero libero. Ut dictum est ac urna malesuada, vel sollicitudin lectus molestie. Sed vel scelerisque lorem. Integer eu metus auctor, pellentesque lacus vel, laoreet sapien.</p>
+		<p>Vivamus sollicitudin, sapien in rutrum placerat, velit libero congue libero, at blandit libero sem eget eros. Sed laoreet massa
+			sit amet pellentesque fringilla. Sed eget gravida quam, non faucibus lectus. Aliquam erat volutpat. Sed vestibulum justo eu
+			risus convallis hendrerit. Aliquam sed malesuada elit. Donec ac turpis orci. Fusce sed libero libero. Ut dictum est ac urna
+			malesuada, vel sollicitudin lectus molestie. Sed vel scelerisque lorem. Integer eu metus auctor, pellentesque lacus vel, laoreet
+			sapien.</p>
 
-    <img src="planet_.png" class="image">
-    <p>Sed ac justo rhoncus, euismod massa non, aliquet nibh. Curabitur id quam ante. Aliquam hendrerit quam eu odio bibendum, auctor fringilla ligula luctus. Nunc non feugiat magna, vel euismod sapien. Aenean porta, erat vel blandit dictum, velit erat posuere tellus, eu varius purus risus eu eros. Aliquam erat volutpat -----BEGIN PGP MESSAGE-----
+		<img class="image" src="planet_.png">
+		<p>Sed ac justo rhoncus, euismod massa non, aliquet nibh. Curabitur id quam ante. Aliquam hendrerit quam eu odio bibendum, auctor
+			fringilla ligula luctus. Nunc non feugiat magna, vel euismod sapien. Aenean porta, erat vel blandit dictum, velit erat posuere
+			tellus, eu varius purus risus eu eros. Aliquam erat volutpat -----BEGIN PGP MESSAGE-----
 
-wcFMAyiZ01Nne++QAQ//XdcPKURt+QsJdcwPpRNnlWd5oOTKJNQWi8cf5YA1wDGL
-K7fKPkvfRUqqzaerV3XrEW35QXk7D7FE9ATl4be7fxroiX/s/ybGV2Y6BhSYBd1G
-jXLQcrHZGBQNDFx4SgMmvLEMxBWlkAPdYTNp+O8mjesRXNB8HTQoFNcDClCCruuu
-Rc7Qagshn3RR3DGcBvVlWauNU+kUQYtyPaUd/xECh5oDs9ELn4MdO6Pyu77rboZ/
-HQVQegUAGR89rtnY588/Eh4fwfccvFGcLRAOotzt5OZ53tYRJ8+HOWnT1KnJ1Y45
-ICyk/XmDQnJwuITWG08y+ef0c9zm62gf+Z3AcanKAU/7H66stIZxIGkG2DLHNWRr
-2vuZqhsJ49zqrDAP1CsH5GGSItbwyd8H4CoD2b150rERzK9qUr5ZyJEslWwYnlR7
-ug+0l0XAipyPJvQqWDEV8ZMY21fgpb6CCmYsh6+6dz3pVMx0xO9UUPLCci2mMTKT
-re4Tqm78tSBa3ipeBnMJzrtziUcI3pWUHCJwqXsRyMs2RgQhrJeOgibQGT/DnfLn
-TwNRoky33w4qdWCe4V2tiTK1JvXFmVqQ5ov7kZEE+wphD8MuC05ffjJn5DowFC2/
-sbReFJ9AolVYfUz1PREMF1qjUWfba85umO9DQr7ndbUKFfJZ6tqjAPhK5hwXkp7S
-NwHC1ZggJvHUSuzkVWUyDGgTsZdSqNUGdGevsJjw1JTcQ+yjP/wuQuxRzjQLuCEh
-hDUdePEZliw=
-=Ax3p
------END PGP MESSAGE-----. Nulla blandit risus sit amet tellus euismod bibendum. Aliquam quis lacinia erat.</p>
+			wcFMAyiZ01Nne++QAQ//XdcPKURt+QsJdcwPpRNnlWd5oOTKJNQWi8cf5YA1wDGL
+			K7fKPkvfRUqqzaerV3XrEW35QXk7D7FE9ATl4be7fxroiX/s/ybGV2Y6BhSYBd1G
+			jXLQcrHZGBQNDFx4SgMmvLEMxBWlkAPdYTNp+O8mjesRXNB8HTQoFNcDClCCruuu
+			Rc7Qagshn3RR3DGcBvVlWauNU+kUQYtyPaUd/xECh5oDs9ELn4MdO6Pyu77rboZ/
+			HQVQegUAGR89rtnY588/Eh4fwfccvFGcLRAOotzt5OZ53tYRJ8+HOWnT1KnJ1Y45
+			ICyk/XmDQnJwuITWG08y+ef0c9zm62gf+Z3AcanKAU/7H66stIZxIGkG2DLHNWRr
+			2vuZqhsJ49zqrDAP1CsH5GGSItbwyd8H4CoD2b150rERzK9qUr5ZyJEslWwYnlR7
+			ug+0l0XAipyPJvQqWDEV8ZMY21fgpb6CCmYsh6+6dz3pVMx0xO9UUPLCci2mMTKT
+			re4Tqm78tSBa3ipeBnMJzrtziUcI3pWUHCJwqXsRyMs2RgQhrJeOgibQGT/DnfLn
+			TwNRoky33w4qdWCe4V2tiTK1JvXFmVqQ5ov7kZEE+wphD8MuC05ffjJn5DowFC2/
+			sbReFJ9AolVYfUz1PREMF1qjUWfba85umO9DQr7ndbUKFfJZ6tqjAPhK5hwXkp7S
+			NwHC1ZggJvHUSuzkVWUyDGgTsZdSqNUGdGevsJjw1JTcQ+yjP/wuQuxRzjQLuCEh
+			hDUdePEZliw=
+			=Ax3p
+			-----END PGP MESSAGE-----. Nulla blandit risus sit amet tellus euismod bibendum. Aliquam quis lacinia erat.</p>
 
-    <p>Praesent dictum euismod bibendum. Aliquam at enim libero. Integer suscipit eros at libero dapibus rutrum. Integer euismod tellus eu enim feugiat, in tincidunt sem eleifend. Sed sed diam elit. Sed euismod bibendum risus, eget auctor sapien pharetra id. Nulla hendrerit varius metus eu blandit. Sed vel velit vel velit tempor dictum. Integer non lorem vel urna gravida tristique. Quisque viverra nulla vel velit tristique, vel porttitor magna bibendum.</p>
-  </body>
+		<p>
+			Praesent dictum euismod bibendum. Aliquam at enim libero. Integer suscipit eros at libero dapibus rutrum. Integer euismod tellus
+			eu enim feugiat, in tincidunt sem eleifend. Sed sed diam elit. Sed euismod bibendum risus, eget auctor sapien pharetra id. Nulla
+			hendrerit varius metus eu blandit. Sed vel velit vel velit tempor dictum. Integer non lorem vel urna gravida tristique. Quisque
+			viverra nulla vel velit tristique, vel porttitor magna bibendum.
+		</p>
+
+		<button class="hint">
+			<a href="indice.zip">Indice</a>
+		</button>
+	</body>
 </html>
