@@ -10,17 +10,19 @@
 
 			<div class="devine">
 				<h1>Devine le nombre !</h1>
-				<p>Je pense à un nombre entre 1 et 100.</p>
+				<p>Je pense à un nombre entre 1 et 50.</p>
 				<p>Entre un nombre : </p>
 				<input id="guessInput" type="number">
 				<button class="a" onclick="checkGuess()">Vérifier</button>
 				<p id="result"></p>
+        <p class="hidden">H</p>
 				<script>
 					function checkGuess() {
-						const targetNumber = Math.floor(Math.random() * 100) + 1;
+						const targetNumber = Math.floor(Math.random() *50) + 1;
 						const guess = document.getElementById("guessInput").value;
-						if (guess === targetNumber) {
-							document.getElementById("result").innerHTML = "Félicitations ! Tu as trouvé le bon nombre.";
+						if (guess == targetNumber) {
+							document.getElementById("result").innerHTML = "Félicitations ! Tu as trouvé le bon nombre tiens ça t'aidera :";
+              document.querySelector('.hidden').classList.remove('hidden');
 						} else if (guess < targetNumber) {
 							document.getElementById("result").innerHTML = "C'est plus grand.";
 						} else {

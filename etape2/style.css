@@ -20,3 +20,6 @@ h1{
 .a{
     background-color: rgb(32, 133, 29);
 }
+.hidden{
+    visibility:  hidden;
+}
