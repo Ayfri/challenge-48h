@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			/* CSS animations */
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+			@keyframes colorChange {
+				0% {
+					color: blue;
+				}
+				100% {
+					color: red;
+				}
+			}
+
+			@keyframes imageMove {
+				0% {
+					transform: translateX(0px);
+				}
+				100% {
+					transform: translateX(500px);
+				}
+			}
+
+			@keyframes tableGrow {
+				0% {
+					transform: scale(1);
+				}
+
+				85% {
+					transform: scale(1.5);
+				}
+
+				100% {
+					transform: scale(1);
+				}
+			}
+
+			@keyframes textSpin {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+			h1 {
+				animation: spin 5s linear infinite;
+			}
+
+			p {
+				animation: colorChange 3s linear infinite;
+			}
+
+			img {
+				animation: imageMove 5s linear infinite;
+			}
+
+			table {
+				animation: tableGrow .5s both ease infinite;
+				margin-left: 50px;
+			}
+
+			.spinning {
+				animation: textSpin 1.2s linear reverse infinite;
+				transform-origin: top center;
+				width: fit-content;
+				font-size: 40px;
+			}
+
+			body {
+				background-color: lightblue;
+			}
+
+			h1 {
+				color: white;
+				text-align: center;
+				font-family: Arial, sans-serif;
+				background-color: navy;
+				padding: 20px;
+			}
+
+			button {
+				background-color: green;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+		</style>
+		<title>My websit !</title>
+	</head>
+	<body>
+		<h1>My Frist Websait</h1>
+		<p>helo wurld!</p>
+		<p>im a 9 yer old boi and i love fortnite and video gams!</p>
+		<p>heres some typos i put in cus its fun!</p>
+		<p>i love puttin animations on my websait, they so cool!</p>
+		<button>look at this animashun!</button>
+		<img alt="animated fortnite dance" src="https://i.imgur.com/WzpBzvS.gif">
+		<p>My favorit video gams:</p>
+		<ul>
+			<li>Fortnite</li>
+			<li>Minecraft</li>
+			<li>Roblox</li>
+		</ul>
+		<p>Here's a table of my high scores in Fortnite:</p>
+		<table>
+			<tr>
+				<th>Gamemode</th>
+				<th>Score</th>
+			</tr>
+			<tr>
+				<td>Solos</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Duos</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>Squads</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>Check out my cool Fortnite skins:</p>
+		<video
+				autoplay
+				draggable="false"
+				loop
+				playsinline
+				title="Trump-fortnite-dance"
+		>
+			<source type="video/mp4" src="https://i.imgur.com/SymxuFn.mp4">
+		</video>
+		<p>Here's a spinning text:</p>
+		<p class="spinning">I love Fortnite!</p>
+		<p hidden>The hidden letter is "p".</p>
+	</body>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => localStorage.setItem('name', 'John'));
+	</script>
+</html>
